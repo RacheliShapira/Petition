@@ -1,0 +1,124 @@
+body {
+    font-family: Bevan, Georgia, serif;
+    background: black;
+    margin: 0;
+    color: white;
+    /* background-image: url(introfull.gif);
+    background-size: 100%; */
+}
+header {
+    /* position: fixed; */
+}
+#headerConatiner {
+    border-bottom: 1px solid DarkGray;
+    background: black;
+    /* box-shadow: 0px 10px rgba(211, 211, 211, 0.3); */
+}
+
+#headerimg {
+    position: relative;
+    left: 33%;
+    height: 150px;
+}
+
+.mainInfo {
+    position: absolute;
+    width: 97%;
+    margin: 15px;
+    text-align: center;
+    padding: 0;
+}
+
+h1 {
+    color: #fcb716;
+}
+#toRegister {
+    position: relative;
+    float: left;
+    left: 25%;
+    color: black;
+    text-decoration: underline;
+}
+
+#toLogin {
+    position: relative;
+    right: 25%;
+    float: right;
+    color: black;
+    text-decoration: underline;
+}
+
+#logout {
+    position: relative;
+    float: right;
+}
+
+.navLinks {
+    position: relative;
+    background-color: #fcb716;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: black;
+    margin: 2px;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button {
+    background-color: #fcb716;
+    border: none;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+canvas {
+    border: 1px solid #fcb716;
+    background: white;
+    width: 700px;
+    height: 180px;
+}
+
+#imgSigned {
+    background: white;
+    border: 1px solid #fcb716;
+    width: 420px;
+    height: 108px;
+}
+
+#editForm {
+    position: relativ;
+}
+
+input {
+    margin-left: 10px;
+}
+.editInput {
+    position: absolute;
+    left: 50%;
+}
+
+.editP {
+    position: absolute;
+    left: 40%;
+}
+
+ul {
+    margin: 40px;
+}
+li {
+    font-size: 20px;
+    text-align: left;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}

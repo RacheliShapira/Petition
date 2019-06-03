@@ -1,0 +1,15 @@
+
+<div class= "mainInfo">
+
+    <h1> Wellcomesss {{name}}, please draw your signature here:</h1>
+
+    <form method="POST">
+        <input name="sig" id="sig" type="hidden">
+        <input name="_csrf" type="hidden" value="{{csrfToken}}"> <!--to protect against csrf attacks, have a hidden input with this name+value in EACH form-->
+        <br>
+        <canvas width="700px" height="180px"></canvas>
+        <br>
+        <button class="navLinks">Sign</button>
+
+    </form>
+</div>

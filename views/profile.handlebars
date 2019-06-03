@@ -1,0 +1,18 @@
+<div class= "mainInfo">
+
+<h1>Hi {{name}}, thank you for registering!</h1>
+<p>Please tell us a bit more about yourself before you continue to the petition.</p>
+
+{{#if error}}
+    <div class="error">Please insert a valid link to your homepage.</div>
+{{/if}}
+
+<form method="post">
+    <input name="age" placeholder="age (optional)"><br><br>
+    <input name="city" placeholder="city (optional)"><br><br>
+    <input name="homepage" placeholder="homepage (optional)"><br>
+    <input name="_csrf" type="hidden" value="{{csrfToken}}">
+    <br>
+    <button class="submitButton">Submit </button> <button>Skip </button>
+</form>
+</div>

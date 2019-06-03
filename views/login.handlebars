@@ -1,0 +1,13 @@
+<div class= "mainInfo">
+<form method="post">
+  <h1>Are you already registered? Then please Login:</h1>
+
+  <input type="text" name="email" placeholder="email">
+  <input type="password" name="password" placeholder="password" autocomplete="off">
+ <input name="_csrf" type="hidden" value="{{csrfToken}}">
+<br><br>
+  <button name="loginButton" class="navLinks">Login</button>
+
+<p> Are you not registered? Then please <a href="/register"> register  </a></p>
+</form>
+</div>

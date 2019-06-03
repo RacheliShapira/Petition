@@ -1,0 +1,30 @@
+
+<div class="nav">
+    <!-- <h3 class="navH"> Hello  {{name}} -->
+    <a href="/edit" class="navLinks">Edit {{name}}'s profile</a>
+    <a href="/logout" id="logout" class="navLinks">Logout</a> </h3>
+</div>
+
+
+<div class= "mainInfo">
+
+    <h1>Here are the people that 'DID IT!' and signed our petition</h1>
+
+    {{# signers}}<ul>
+        <li>
+            {{#if url}}
+                <a href="{{ url }}" class="signers-link">{{ first }} {{last}}</a>
+            {{else}}
+                {{ first }} {{ last }}
+            {{/if}}
+            {{#if age}}
+                , {{age}} years
+            {{/if}}
+            {{#if city}}
+                , from {{city}}
+            {{/if}}
+            .
+        </li>
+    </ul>{{/signers}}
+
+</div>

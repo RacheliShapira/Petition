@@ -1,0 +1,22 @@
+<div class= "mainInfo">
+    <h1>Need to update your info?</h1>
+
+    <br>
+    {{#if error}}
+        <div class="error">Oops, something went wrong! Please try again.</div>
+    {{/if}}
+
+    <form method="post" id ="editForm">
+        <label for="first" class="editP">First Name: </label>  <input class="editInput" name="first" placeholder="first name" value="{{first}}"><br><br>
+        <label for="last" class="editP">Last Name: </label> <input class="editInput" name="last" placeholder="last name" value="{{last}}"><br><br>
+        <label for="email" class="editP">Email Address: </label><input class="editInput" name="email" placeholder="email address" value="{{email}}"><br><br>
+        <label for="password" class="editP"> Password: </label>  <input class="editInput" name="password" placeholder="new password (optional)"  autocomplete="off"><br><br>
+        <label for="password" class="editP"> Age: </label> <input class="editInput" name="age" placeholder="age (optional)" value="{{age}}"><br><br>
+        <label for="password" class="editP"> City: </label>  <input class="editInput" name="city" placeholder="city (optional)" value="{{city}}"><br><br>
+        <label for="password" class="editP"> Homepage: </label> <input class="editInput" name="homepage" placeholder="homepage (optional)" value="{{homepage}}">
+        <input name="_csrf" type="hidden" value="{{csrfToken}}">
+        <br><br>
+        <button class="navLinks">UPDATE</button>
+    </form>
+
+</div>
